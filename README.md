@@ -10,8 +10,6 @@
 - [Features](#-features)
 - [Design Aesthetics & Color Palette](#-design-aesthetics--color-palette)
 - [Showcase & Visual Gallery](#-showcase--visual-gallery)
-- [Getting Started](#-getting-started)
-- [Project Structure](#-project-structure)
 - [Technologies Used](#-technologies-used)
 - [License](#-license)
 
