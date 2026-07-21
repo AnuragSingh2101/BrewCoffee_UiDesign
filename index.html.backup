@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bloom Coffee Co. - Premium Specialty Coffee</title>
+    <meta name="description" content="Experience exceptional specialty coffee at Brew & Bloom. Artisanal blends, handcrafted beverages, and a welcoming space for coffee lovers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Brew & Bloom</h1>
+                <p>Specialty Coffee Co.</p>
+            </div>
+            <nav class="nav-primary" aria-label="Primary navigation">
+                <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Open menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="primary-menu" class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Exceptional Coffee, Thoughtfully Crafted</h1>
+                <p class="hero-subtitle">Discover the art of specialty coffee in our welcoming space. Each cup is a journey of flavor, carefully sourced and expertly brewed.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+                    <a href="#about" class="btn btn-secondary">Learn About Us</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Placeholder for hero image -->
+                <div class="placeholder-image hero-placeholder">
+                    <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#F5F0E6"/>
+                        <circle cx="200" cy="150" r="80" fill="rgba(212, 175, 55, 0.2)"/>
+                        <text x="200" y="150" text-anchor="middle" dy=".3em" font-family="Playfair Display, serif" font-size="24" fill="#4A2C2A" opacity="0.7">Brew & Bloom</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Story</h2>
+                <p class="section-subtitle">From bean to cup, every detail matters</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At Brew & Bloom, we believe coffee is more than just a beverage—it's an experience. Founded by passionate coffee enthusiasts, we source only the finest ethically-sourced beans from sustainable farms around the world.</p>
+                    <p>Our master roasters carefully develop each blend to highlight unique flavor profiles, from bright and fruity to rich and chocolatey. Every beverage is craftedly prepared by our skilled baristas who treat each cup as a work of art.</p>
+                    <p>Step into our warm, inviting space designed for connection, creativity, and quiet contemplation. Whether you're seeking the perfect morning espresso or a leisurely afternoon pour-over, we're here to elevate your coffee ritual.</p>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image about-placeholder">
+                        <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#F5F0E6"/>
+                            <path d="M50,50 L350,50 L350,250 L50,250 Z" fill="none" stroke="#D4AF37" stroke-width="2"/>
+                            <circle cx="200" cy="150" r="60" fill="rgba(74, 44, 42, 0.1)"/>
+                            <text x="200" y="140" text-anchor="middle" font-family="Playfair Display, serif" font-size="18" fill="#4A2C2A" opacity="0.8">Crafted with Care</text>
+                            <text x="200" y="170" text-anchor="middle" font-family="Poppins, sans-serif" font-size="14" fill="#6B6B6B">Specialty Coffee Since 2020</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Thoughtfully curated beverages & treats</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="espresso">Espresso Bar</button>
+                <button class="tab-btn" data-tab="brew">Hand Brewed</button>
+                <button class="tab-btn" data-tab="specialty">Signature Drinks</button>
+                <button class="tab-btn" data-tab="pastries">Pastries & Bites</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Espresso Bar Tab -->
+                <div class="menu-tab-content active" id="espresso-tab">
+                    <div class="menu-grid">
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title">Espresso Shot</h3>
+                            <p class="menu-item-description">Rich, concentrated shot with crema</p>
+                            <div class="menu-item-price">$3.00</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title">Americano</h3>
+                            <p class="menu-item-description">Espresso with hot water</p>
+                            <div class="menu-item-price">$3.50</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title">Cappuccino</h3>
+                            <p class="menu-item-description">Espresso, steamed milk, foam</p>
+                            <div class="menu-item-price">$4.50</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title">Latte</h3>
+                            <p class="menu-item-description">Espresso with steamed milk</p>
+                            <div class="menu-item-price">$4.75</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title">Mocha</h3>
+                            <p class="menu-item-description">Espresso, chocolate, steamed milk</p>
+                            <div class="menu-item-price">$5.25</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title">Flat White</h3>
+                            <p class="menu-item-description">Espresso with microfoam milk</p>
+                            <div class="menu-item-price">$4.75</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hand Brewed Tab -->
+                <div class="menu-tab-content" id="brew-tab">
+                    <div class="menu-grid">
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title">Pour Over</h3>
+                            <p class="menu-item-description">Single origin, carefully poured</p>
+                            <div class="menu-item-price">$4.50 - $5.50</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title">French Press</h3>
+                            <p class="menu-item-description">Full-bodied immersion brew</p>
+                            <div class="menu-item-price">$4.75</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title">Aeropress</h3>
+                            <p class="menu-item-description">Smooth, clean cup</p>
+                            <div class="menu-item-price">$4.50</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title">Cold Brew</h3>
+                            <p class="menu-item-description">Smooth, low-acid concentrate</p>
+                            <div class="menu-item-price">$4.25</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title">Nitro Cold Brew</h3>
+                            <p class="menu-item-description">Creamy, cascading pour</p>
+                            <div class="menu-item-price">$5.50</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Signature Drinks Tab -->
+                <div class="menu-tab-content" id="specialty-tab">
+                    <div class="menu-grid">
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title"> Honey Lavender Latte</h3>
+                            <p class="menu-item-description">Local honey, culinary lavender</p>
+                            <div class="menu-item-price">$5.75</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title"> Maple Pecan Latte</h3>
+                            <p class="menu-item-description">Pure maple syrup, toasted pecans</p>
+                            <div class="menu-item-price">$5.75</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title"> Vanilla Bean Frappé</h3>
+                            <p class="menu-item-description">House-made vanilla, blended</p>
+                            <div class="menu-item-price">$5.50</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title"> Spiced Chai Latte</h3>
+                            <p class="menu-item-description">House chai blend, steamed milk</p>
+                            <div class="menu-item-price">$5.25</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title"> Seasonal Special</h3>
+                            <p class="menu-item-description">Rotating seasonal creation</p>
+                            <div class="menu-item-price">$5.75</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pastries & Bites Tab -->
+                <div class="menu-tab-content" id="pastries-tab">
+                    <div class="menu-grid">
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title"> Almond Croissant</h3>
+                            <p class="menu-item-description">Flaky pastry, almond filling</p>
+                            <div class="menu-item-price">$4.25</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title"> Blueberry Scone</h3>
+                            <p class="menu-item-description">Fresh blueberries, lemon zest</p>
+                            <div class="menu-item-price">$3.75</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title"> Avocado Toast</h3>
+                            <p class="menu-item-description">Sourdough, microgreens, everything</p>
+                            <div class="menu-item-price">$8.50</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title"> Greek Yogurt Parfait</h3>
+                            <p class="menu-item-description">Granola, honey, seasonal berries</p>
+                            <div class="menu-item-price">$6.50</div>
+                        </div>
+                        <div class="menu-item-card">
+                            <h3 class="menu-item-title"> Dark Chocolate Brownie</h3>
+                            <p class="menu-item-description">Fudgy, walnut, sea salt</p>
+                            <div class="menu-item-price">$3.50</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Our Commitment</h2>
+                <p class="section-subtitle">What sets us apart</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" stroke="#4A2C2A" stroke-width="2"/>
+                            <path d="M12 8V12" stroke="#4A2C2A" stroke-width="2" stroke-linecap="square"/>
+                            <path d="M12 16V20" stroke="#4A2C2A" stroke-width="2" stroke-linecap="square"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Ethical Sourcing</h3>
+                    <p class="feature-text">We partner with farmers who use sustainable practices and receive fair compensation for their exceptional beans.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="#4A2C2A" stroke-width="2"/>
+                            <path d="M12 2V12" stroke="#4A2C2A" stroke-width="2" stroke-linecap="square"/>
+                            <path d="M2 12H12" stroke="#4A2C2A" stroke-width="2" stroke-linecap="square"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Artisan Roasting</h3>
+                    <p class="feature-text">Small-batch roasting to precise profiles that highlight each bean's unique characteristics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 7H19" stroke="#4A2C2A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M5 12H19" stroke="#4A2C2A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M5 17H19" stroke="#4A2C2A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Expert Baristas</h3>
+                    <p class="feature-text">Our team undergoes rigorous training to ensure every beverage meets our exacting standards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12C3 8.13 6.13 5 10 5C13.87 5 17 8.13 17 12C17 15.87 13.87 19 10 19C6.13 19 3 15.87 3 12Z" stroke="#4A2C2A" stroke-width="2"/>
+                            <path d="M12 8V12" stroke="#4A2C2A" stroke-width="2" stroke-linecap="square"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Welcoming Space</h3>
+                    <p class="feature-text">Thoughtfully designed interior creates the perfect backdrop for connection, work, or quiet enjoyment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Space</h2>
+                <p class="section-subtitle">A welcoming environment for coffee lovers</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="placeholder-image gallery-placeholder">
+                        <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#F5F0E6"/>
+                            <text x="150" y="100" text-anchor="middle" dy=".3em" font-family="Playfair Display, serif" font-size="16" fill="#4A2C2A" opacity="0.7">Coffee Bar</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image gallery-placeholder">
+                        <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#F5F0E6"/>
+                            <text x="150" y="100" text-anchor="middle" dy=".3em" font-family="Playfair Display, serif" font-size="16" fill="#4A2C2A" opacity="0.7">Seating Area</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image gallery-placeholder">
+                        <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#F5F0E6"/>
+                            <text x="150" y="100" text-anchor="middle" dy=".3em" font-family="Playfair Display, serif" font-size="16" fill="#4A2C2A" opacity="0.7">Pour Over Bar</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image gallery-placeholder">
+                        <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="200" fill="#F5F0E6"/>
+                            <text x="150" y="100" text-anchor="middle" dy=".3em" font-family="Playfair Display, serif" font-size="16" fill="#4A2C2A" opacity="0.7">Pastry Display</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">What Our Guests Say</h2>
+                <p class="section-subtitle">Experiences shared by our community</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Absolutely the best coffee in town! The pour-over is transformative and the atmosphere is perfect for working or meeting friends."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="18" fill="#F5F0E6"/>
+                                <text x="20" y="25" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" fill="#4A2C2A">JS</text>
+                            </svg>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Jessica S.</h4>
+                            <p class="author-location">Local Professional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a coffee aficionado, I'm impressed by the quality and consistency. The baristas truly know their craft."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="18" fill="#F5F0E6"/>
+                                <text x="20" y="25" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" fill="#4A2C2A">MK</text>
+                            </svg>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Michael K.</h4>
+                            <p class="author-location">Coffee Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The space is beautiful, the coffee is exceptional, and the staff is incredibly welcoming. My new favorite spot!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="18" fill="#F5F0E6"/>
+                                <text x="20" y="25" text-anchor="middle" font-family="Poppins, sans-serif" font-size="12" fill="#4A2C2A">AM</text>
+                            </svg>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Alex M.</h4>
+                            <p class="author-location">Freelancer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Stay Updated</h2>
+                    <p class="newsletter-subtitle">Join our community for updates on new blends, events, and special offerings</p>
+                </div>
+                <form class="newsletter-form" aria-label="Newsletter signup">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email address">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Visit Us</h2>
+                <p class="section-subtitle">Find us in the heart of the city</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9L12 15L21 9" stroke="#4A2C2A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="contact-title">Location</h3>
+                        <p class="contact-text">123 Coffee Avenue, Downtown District</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12L22 12M12 2L12 22" stroke="#4A2C2A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="contact-title">Hours</h3>
+                        <p class="contact-text">Monday-Friday: 6AM-6PM<br>Saturday-Sunday: 7AM-7PM</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2V22" stroke="#4A2C2A" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 12H22" stroke="#4A2C2A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="contact-title">Contact</h3>
+                        <p class="contact-text">Phone: (555) 123-4567<br>Email: hello@brewbloom.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h1>Brew & Bloom</h1>
+                    <p>Specialty Coffee Co.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <form class="footer-newsletter-form" aria-label="Footer newsletter signup">
+                        <input type="email" placeholder="Email address" aria-label="Email address">
+                        <button type="submit" class="btn btn-sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Brew & Bloom Coffee Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4L6 10H18L12 4Z" fill="#4A2C2A"/>
+            <path d="M6 10H18V20H6V10Z" fill="#4A2C2A"/>
+        </svg>
+    </button>
+
+    <script>
+        // Simple mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.getElementById('primary-menu');
+
+            navToggle.addEventListener('click', function() {
+                const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+                this.setAttribute('aria-expanded', !expanded);
+                navMenu.classList.toggle('nav-menu-open');
+            });
+
+            // Tab functionality for menu
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.menu-tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons and contents
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+
+                    // Show corresponding tab content
+                    const tabId = btn.getAttribute('data-tab') + '-tab';
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+
+            // Back to top button
+            const backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTop.style.display = 'flex';
+                } else {
+                    backToTop.style.display = 'none';
+                }
+            });
+
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
