@@ -1,12 +1,7 @@
-/**
- * Brew & Bloom Coffee Co. - Main Interactive Logic
- */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Cart State ---
     let cart = JSON.parse(localStorage.getItem('brew_bloom_cart')) || [];
 
-    // --- DOM Elements ---
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.getElementById('primary-menu');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -14,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabContents = document.querySelectorAll('.menu-tab-content');
     const backToTopBtn = document.querySelector('.back-to-top');
 
-    // Cart Elements
     const cartToggleBtn = document.getElementById('cart-toggle-btn');
     const cartDrawer = document.getElementById('cart-drawer');
     const cartOverlay = document.getElementById('cart-overlay');
@@ -26,13 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartTotalEl = document.getElementById('cart-total');
     const checkoutBtn = document.getElementById('checkout-btn');
 
-    // Lightbox Elements
+
     const lightboxModal = document.getElementById('lightbox-modal');
     const lightboxImg = document.getElementById('lightbox-img');
     const lightboxCaption = document.getElementById('lightbox-caption');
     const closeLightboxBtn = document.getElementById('close-lightbox');
 
-    // Toast Container
+
     let toastContainer = document.getElementById('toast-container');
     if (!toastContainer) {
         toastContainer = document.createElement('div');
@@ -41,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.appendChild(toastContainer);
     }
 
-    // --- Toast Notification Helper ---
+
     function showToast(message, title = 'Brew & Bloom', icon = '☕') {
         const toast = document.createElement('div');
         toast.className = 'toast-notification';
@@ -56,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         toastContainer.appendChild(toast);
 
-        // Auto remove after 3.5 seconds
+
         const timer = setTimeout(() => {
             removeToast(toast);
         }, 3500);
@@ -76,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Navigation & Mobile Menu ---
+
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', () => {
             const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
@@ -93,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Scroll Spy Navigation ---
+
     const sections = document.querySelectorAll('section[id], header[id]');
 
     function highlightNavOnScroll() {
@@ -115,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', highlightNavOnScroll);
 
-    // --- Menu Tab Functionality ---
+
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             tabBtns.forEach(b => b.classList.remove('active'));
@@ -129,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Back to Top Button ---
+
     if (backToTopBtn) {
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
@@ -210,14 +204,13 @@ document.addEventListener('DOMContentLoaded', () => {
             cartItemsContainer.appendChild(cartItemEl);
         });
 
-        const tax = subtotal * 0.08; // 8% estimated sales tax
+        const tax = subtotal * 0.08; // 8% estimated sales tax in amount
         const grandTotal = subtotal + tax;
 
         if (cartSubtotalEl) cartSubtotalEl.textContent = `$${subtotal.toFixed(2)}`;
         if (cartTaxEl) cartTaxEl.textContent = `$${tax.toFixed(2)}`;
         if (cartTotalEl) cartTotalEl.textContent = `$${grandTotal.toFixed(2)}`;
 
-        // Attach listeners to dynamic cart item buttons
         cartItemsContainer.querySelectorAll('.qty-btn.minus').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const id = e.target.getAttribute('data-id');
@@ -303,7 +296,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const id = card.getAttribute('data-id') || card.querySelector('.menu-item-title').textContent.toLowerCase().replace(/\s+/g, '-');
             const title = card.querySelector('.menu-item-title').textContent.trim();
             const rawPrice = card.querySelector('.menu-item-price').textContent;
-            // Parse numerical price (e.g. "$4.75" -> 4.75, "$4.50 - $5.50" -> 4.50)
             const matchPrice = rawPrice.match(/\$?\s*([\d.]+)/);
             const price = matchPrice ? parseFloat(matchPrice[1]) : 4.50;
             const image = card.querySelector('.menu-item-img')?.src || 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&q=80';
@@ -312,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Checkout button logic
+
     if (checkoutBtn) {
         checkoutBtn.addEventListener('click', () => {
             if (cart.length === 0) return;
@@ -324,10 +316,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Initial render of cart
+    
     renderCart();
 
-    // --- Gallery Lightbox ---
+    
     const galleryItems = document.querySelectorAll('.gallery-item');
     galleryItems.forEach(item => {
         item.addEventListener('click', () => {
